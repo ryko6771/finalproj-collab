@@ -188,10 +188,10 @@ cin >> newAccount.phoneNumber;
         int scount=0;
         for (int i=0;i<date.length();i++){
             if(date[i]==' '&&i < 2){
-                createday.day = stoi(date.substr(scount,i-1));
+                createday.day = stoi(date.substr(scount,i-scount));
             }else if(date[i]==' '&&i<6){
-                createday.month =stoi(date.substr(scount,i-1));
-                createday.year = stoi(date.substr(i+1,date.length()));
+                createday.month =stoi(date.substr(scount,i-scount));
+                createday.year = stoi(date.substr(i+1,date.length() - scount));
             }
             
         }

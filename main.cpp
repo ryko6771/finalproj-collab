@@ -182,6 +182,7 @@ cin >> newAccount.phoneNumber;
     int y=0;
     while(y=0)
      cout <<"Enter Account Opening Date (DD MM YYYY): ";
+     cin >> createday.day >> createday.month >> createday.year;
         Date createday; 
         string date;
         cin >> date;//date entry
